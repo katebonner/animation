@@ -3,6 +3,8 @@
     --lips: rgb(233, 197, 150);
     --iris: rgb(223, 25, 134);
     --hair: rgb(247, 148, 238);
+
+    background-color: blue;
 }
 
 body {
@@ -41,7 +43,7 @@ body {
     border-radius: 100% 100% / 300% 300% 12% 12%;
     z-index: 2;
     position: relative;
-    top: -153px;
+    top: -148px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -52,7 +54,7 @@ body {
     border-radius: 100% 100% / 300% 300% 12% 12%;
     z-index: 2;
     position: relative;
-    top: -146px;
+    top: -138px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -63,7 +65,7 @@ body {
     border-radius: 100% 100%;
     z-index: 2;
     position: relative;
-    top: -190px;
+    top: -185px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -76,7 +78,7 @@ body {
     z-index: 2;
     position: relative;
     left: -36px;
-    top: -245px;
+    top: -240px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -89,7 +91,7 @@ body {
     z-index: 2;
     position: relative;
     left: 36px;
-    top: -285px;
+    top: -280px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -101,7 +103,7 @@ body {
     z-index: 3;
     position: relative;
     left: -36px;
-    top: -320px;
+    top: -315px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -113,7 +115,7 @@ body {
     z-index: 3;
     position: relative;
     left: 36px;
-    top: -350px;
+    top: -345px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -125,7 +127,7 @@ body {
     z-index: 3;
     position: relative;
     left: -36px;
-    top: -388px;
+    top: -383px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -137,7 +139,7 @@ body {
     z-index: 3;
     position: relative;
     left: 36px;
-    top: -408px;
+    top: -403px;
     animation: turn 1.2s linear infinite;
     
 }
@@ -177,7 +179,7 @@ body {
     z-index: 3;
     position: relative;
     left: 40px;
-    top: -540px;
+    top: -535px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -190,7 +192,7 @@ body {
     z-index: 3;
     position: relative;
     left: -40px;
-    top: -550px;
+    top: -545px;
     animation: turn 1.2s linear infinite;
 }
 
@@ -249,7 +251,7 @@ body {
     z-index: 4;
     position: relative;
     left: -42px;
-    top: -1475px;
+    top: -1470px;
 }
 
 .highlight-right {
@@ -260,13 +262,13 @@ body {
     z-index: 4;
     position: relative;
     left: 30px;
-    top: -1485px;
+    top: -1480px;
 }
 
 iframe {
     top: -1355px;
     position: relative;
-    width: 300px;
+    width: 250px;
     animation: turn5 1.2s linear infinite;
 }
 
@@ -334,15 +336,17 @@ iframe {
 
 @keyframes turn5 {
     0% {
-        border-radius: 100% / 50% 50% 50% 50%;
+        border-radius: 100% / 50% 50% 10% 10%;
     }
     25% {
-        border-radius: 100% / 50% 60% 50% 60%;
+        border-radius: 100% / 50% 55% 10% 10%;
     }
     75% {
-        border-radius:  100% / 60% 50% 60% 50%;
+        border-radius:  100% / 55% 50% 10% 10%;
     }
     100% {
-        border-radius: 100% / 50%  50% 50% 50%;
+        border-radius: 100% / 50%  50% 10% 10%;
     }
 }
+
+
