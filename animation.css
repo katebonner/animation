@@ -1,0 +1,326 @@
+:root {
+    --skin: rgb(241, 212, 173);
+    --lips: rgb(233, 197, 150);
+    --iris: rgb(207, 25, 223);
+    --hair: rgb(247, 148, 238);
+}
+
+body {
+    display: flex;
+    margin: 100px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.face {
+    width: 180px;
+    height: 220px;
+    background-color: var(--skin);
+    border-radius: 100% 100% / 70% 70% 120% 120%;
+    z-index: 1;
+    animation: turn4 3s linear infinite;
+}
+
+.neck {
+    width: 60px;
+    height: 100px;
+    background-color: var(--skin);
+    border-radius: 1.5em;
+    box-shadow: inset 0 3em var(--lips);
+    position: relative;
+    top: -40px;
+}
+
+.upper-lip {
+    width: 40px;
+    height: 8px;
+    background-color: var(--lips);
+    border-radius: 100% 100% / 300% 300% 12% 12%;
+    z-index: 2;
+    position: relative;
+    top: -153px;
+    animation: turn 3s linear infinite;
+}
+
+.lower-lip {
+    width: 20px;
+    height: 3px;
+    background-color: var(--lips);
+    border-radius: 100% 100% / 300% 300% 12% 12%;
+    z-index: 2;
+    position: relative;
+    top: -146px;
+    animation: turn 3s linear infinite;
+}
+
+.nose {
+    width: 20px;
+    height: 5px;
+    background-color: var(--lips);
+    border-radius: 100% 100%;
+    z-index: 2;
+    position: relative;
+    top: -190px;
+    animation: turn 3s linear infinite;
+}
+
+.left-eye {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    /* border-radius: 50% 50% / 40% 60% 10% 50%; */
+    z-index: 2;
+    position: relative;
+    left: -36px;
+    top: -245px;
+    animation: turn 3s linear infinite;
+}
+
+.right-eye {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    /* border-radius: 50% 50% / 60% 40% 50% 10%; */
+    z-index: 2;
+    position: relative;
+    left: 36px;
+    top: -285px;
+    animation: turn 3s linear infinite;
+}
+
+.left-iris {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--iris);
+    z-index: 3;
+    position: relative;
+    left: -36px;
+    top: -320px;
+    animation: turn 3s linear infinite;
+}
+
+.right-iris {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--iris);
+    z-index: 3;
+    position: relative;
+    left: 36px;
+    top: -350px;
+    animation: turn 3s linear infinite;
+}
+
+.upper-left-lid {
+    width: 40px;
+    height: 20px;
+    background-color: var(--lips);
+    border-radius: 100% 100% / 200% 200% 10% 10%;
+    z-index: 3;
+    position: relative;
+    left: -36px;
+    top: -388px;
+    animation: turn 3s linear infinite;
+}
+
+.upper-right-lid {
+    width: 40px;
+    height: 20px;
+    background-color: var(--lips);
+    border-radius: 100% 100% / 200% 200% 10% 10%;
+    z-index: 3;
+    position: relative;
+    left: 36px;
+    top: -408px;
+    animation: turn 3s linear infinite;
+    
+}
+
+.left-ear {
+    width: 50px;
+    height: 50px;
+    background-color: var(--lips);
+    border-radius: 50% 50% / 40% 40% 20% 90%;
+    z-index: 0;
+    position: relative;
+    left: -80px;
+    top: -410px;
+    box-shadow: inset 0 .5em var(--skin);
+    animation: turn2 3s linear infinite;
+}
+
+.right-ear {
+    width: 50px;
+    height: 50px;
+    background-color: var(--lips);
+    border-radius: 50% 50% / 40% 40% 90% 20%;
+    z-index: 0;
+    position: relative;
+    left: 80px;
+    top: -460px;
+    box-shadow: inset 0 .5em var(--skin);
+    animation: turn2 3s linear infinite;
+}
+
+.left-brow {
+    width: 50px;
+    height: 10px;
+    background-color: var(--skin);
+    box-shadow: inset 0 .4em var(--iris);
+    border-radius: 80% 100% 30% 40% / 70% 100% 90% 100%;
+    z-index: 3;
+    position: relative;
+    left: 40px;
+    top: -540px;
+    animation: turn 3s linear infinite;
+}
+
+.right-brow {
+    width: 50px;
+    height: 10px;
+    background-color: var(--skin);
+    box-shadow: inset 0 .4em var(--iris);
+    border-radius: 100% 80% 40% 30% / 100% 70% 100% 90%;
+    z-index: 3;
+    position: relative;
+    left: -40px;
+    top: -550px;
+    animation: turn 3s linear infinite;
+}
+
+.hair-back {
+    width: 200px;
+    height: 300px;
+    border-radius: 70% 70% 100% 20% / 50% 50% 100% 100%;
+    background-color: var(--hair);
+    z-index: -1;
+    position: relative;
+    top: -650px;
+    animation: turn3 3s linear infinite;
+}
+
+.hair-front-left {
+    width: 105px;
+    height: 300px;
+    border-radius: 60% 60% 10% 100% / 30% 30% 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 2em 2em  var(--hair);
+    z-index: 4;
+    position: relative;
+    left: -45px;
+    top: -930px;
+    animation: turn 3s linear infinite;
+}
+
+.hair-front-right {
+    width: 105px;
+    height: 300px;
+    border-radius: 60% 60% 100% 10% / 30% 30% 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset -2em 2em  var(--hair);
+    z-index: 4;
+    position: relative;
+    left: 45px;
+    top: -1230px;
+    animation: turn 3s linear infinite;
+}
+.bangs {
+    width: 100px;
+    height: 50px;
+    background-color: var(--hair);
+    border-radius: 100% 80% 40% 30% / 100% 70% 100% 90%;
+    z-index: 3;
+    position: relative;
+    top: -1548px;
+    animation: turn 3s linear infinite;
+}
+
+.highlight-left {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    z-index: 4;
+    position: relative;
+    left: -42px;
+    top: -1475px;
+}
+
+.highlight-right {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    z-index: 4;
+    position: relative;
+    left: 30px;
+    top: -1485px;
+}
+
+
+@keyframes turn {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes turn2 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes turn3 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(1px);
+    }
+    75% {
+        transform: translateX(-1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes turn4 {
+    0% {
+        border-radius: 100% 100% / 70% 70% 120% 120%;
+    }
+    25% {
+        border-radius: 100% 100% / 70% 70% 120% 110%;
+    }
+    75% {
+        border-radius: 100% 100% / 70% 70% 110% 120%;
+
+    }
+    100% {
+        border-radius: 100% 100% / 70% 70% 120% 120%;
+    }
+}
