@@ -1,7 +1,7 @@
 :root {
     --skin: rgb(241, 212, 173);
     --lips: rgb(233, 197, 150);
-    --iris: rgb(207, 25, 223);
+    --iris: rgb(223, 25, 134);
     --hair: rgb(247, 148, 238);
 }
 
@@ -21,7 +21,7 @@ body {
     background-color: var(--skin);
     border-radius: 100% 100% / 70% 70% 120% 120%;
     z-index: 1;
-    animation: turn4 3s linear infinite;
+    animation: turn4 1.2s linear infinite;
 }
 
 .neck {
@@ -42,7 +42,7 @@ body {
     z-index: 2;
     position: relative;
     top: -153px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .lower-lip {
@@ -53,7 +53,7 @@ body {
     z-index: 2;
     position: relative;
     top: -146px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .nose {
@@ -64,7 +64,7 @@ body {
     z-index: 2;
     position: relative;
     top: -190px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .left-eye {
@@ -77,7 +77,7 @@ body {
     position: relative;
     left: -36px;
     top: -245px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .right-eye {
@@ -90,7 +90,7 @@ body {
     position: relative;
     left: 36px;
     top: -285px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .left-iris {
@@ -102,7 +102,7 @@ body {
     position: relative;
     left: -36px;
     top: -320px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .right-iris {
@@ -114,7 +114,7 @@ body {
     position: relative;
     left: 36px;
     top: -350px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .upper-left-lid {
@@ -126,7 +126,7 @@ body {
     position: relative;
     left: -36px;
     top: -388px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .upper-right-lid {
@@ -138,7 +138,7 @@ body {
     position: relative;
     left: 36px;
     top: -408px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
     
 }
 
@@ -152,7 +152,7 @@ body {
     left: -80px;
     top: -410px;
     box-shadow: inset 0 .5em var(--skin);
-    animation: turn2 3s linear infinite;
+    animation: turn2 1.2s linear infinite;
 }
 
 .right-ear {
@@ -165,7 +165,7 @@ body {
     left: 80px;
     top: -460px;
     box-shadow: inset 0 .5em var(--skin);
-    animation: turn2 3s linear infinite;
+    animation: turn2 1.2s linear infinite;
 }
 
 .left-brow {
@@ -178,7 +178,7 @@ body {
     position: relative;
     left: 40px;
     top: -540px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .right-brow {
@@ -191,7 +191,7 @@ body {
     position: relative;
     left: -40px;
     top: -550px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .hair-back {
@@ -202,7 +202,7 @@ body {
     z-index: -1;
     position: relative;
     top: -650px;
-    animation: turn3 3s linear infinite;
+    animation: turn3 1.2s linear infinite;
 }
 
 .hair-front-left {
@@ -215,7 +215,7 @@ body {
     position: relative;
     left: -45px;
     top: -930px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .hair-front-right {
@@ -228,7 +228,7 @@ body {
     position: relative;
     left: 45px;
     top: -1230px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 .bangs {
     width: 100px;
@@ -238,7 +238,7 @@ body {
     z-index: 3;
     position: relative;
     top: -1548px;
-    animation: turn 3s linear infinite;
+    animation: turn 1.2s linear infinite;
 }
 
 .highlight-left {
@@ -261,6 +261,13 @@ body {
     position: relative;
     left: 30px;
     top: -1485px;
+}
+
+iframe {
+    top: -1355px;
+    position: relative;
+    width: 300px;
+    animation: turn5 1.2s linear infinite;
 }
 
 
@@ -322,5 +329,20 @@ body {
     }
     100% {
         border-radius: 100% 100% / 70% 70% 120% 120%;
+    }
+}
+
+@keyframes turn5 {
+    0% {
+        border-radius: 100% / 50% 50% 50% 50%;
+    }
+    25% {
+        border-radius: 100% / 50% 60% 50% 60%;
+    }
+    75% {
+        border-radius:  100% / 60% 50% 60% 50%;
+    }
+    100% {
+        border-radius: 100% / 50%  50% 50% 50%;
     }
 }
